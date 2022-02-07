@@ -11,11 +11,8 @@
     <!-- <script defer src="./js/onlyCam.js"></script> -->
 </head>
 <body>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" id="uploadFile">
-        <input type="submit" value="Upload" id="uploadSubmit">
-    </form>
-    <section>
+
+    <section class="main">
         <div class="recognitionBlock">
             <div id="content">
                 <video id="video" width="720" height="560" autoplay muted></video>
@@ -23,16 +20,19 @@
             <p id="info"></p>
         </div>
         <div class="infoBlock">
-            <div class="checkExpression">
-                <ul>
-                    <li class="" id="faceDetection"> Определение лица</li>
-                    <li class="" id="happyDetection"> Ожидание эмоции счатье</li>
-                    <li class="" id="angryDetection"> Ожидание эмоции гнев</li>
-                    <!-- <li id="finaly"></li> -->
-                </ul>
-            </div>
+            <ul>
+                <li class="" id="faceDetection"> Определение лица</li>
+                <li class="" id="happyDetection"> Ожидание эмоции счатье</li>
+                <li class="" id="angryDetection"> Ожидание эмоции гнев</li>
+            </ul>
         </div>
+        <form class="form" action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="uploadFile">
+            <input type="submit" value="Загрузить" id="uploadSubmit">
+        </form>
+        <p class="author"> Дмитрий Щербаков</p>
     </section>
+
 
 </body>
 </html>
